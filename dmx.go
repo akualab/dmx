@@ -11,7 +11,7 @@ package dmx
 
 import (
 	"fmt"
-	"github.com/tarm/goserial"
+	"github.com/tarm/serial"
 	"io"
 	"log"
 )
@@ -19,7 +19,7 @@ import (
 const (
 	START_VAL       = 0x7E
 	END_VAL         = 0xE7
-	BAUD            = 57600
+	BAUD            = 115200
 	TIMEOUT         = 1
 	DEV             = "/dev/ttyUSB0"
 	FRAME_SIZE      = 511
